@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>libasm</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h2>Code</h2>
+        <form>
+          <textarea name="code" class="editor">
+section .data
+name: "SoR"
+
+section .text
+
+push 2
+pop ax</textarea
+          >
+          <button type="submit">Run</button>
+        </form>
+      </section>
+      <section>
+        <h2>Console</h2>
+        <ul class="console-list" id="asmconsole"></ul>
+      </section>
+    </div>
+    <script type="module" src="lib/libasm.js"></script>
+    <script type="module" src="src/index.js"></script>
+  </body>
+</html>

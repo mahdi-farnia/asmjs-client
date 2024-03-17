@@ -1,0 +1,13 @@
+section .data
+<symbol_name>: <data>
+<symbol_name>: <data> ; Single Line Comment
+<symbol_name>: <data> // Single Line Comment
+<symbol_name>: <data> # Single Line Comment
+
+section .text
+<instruction> [<arg1>, <arg2>, <arg3>, ...]
+
+--------
+* note:
+    in data section we can have new lines between symbol and value, in text section for symbol we can have new lines between symbol and instruction
+    but in text section, between instruction and operands, LF terminates the operand list!
